@@ -4,26 +4,53 @@ export const metadata = {
 };
 
 export default function Projects() {
+  const projects = [
+    {
+      title: "MILO Web App",
+      description:
+        "Developed an intuitive dashboard and secure login system for the MILO web app, streamlining user experience and data visualization.",
+      link: "https://miloapp.com",
+      icon: "M",
+    },
+    {
+      title: "Personal Portfolio",
+      description:
+        "A polished portfolio built with Next.js to showcase my front-end development skills and innovative projects.",
+      link: "https://razielvidal.com",
+      icon: "P",
+    },
+    {
+      title: "Energy Pulse App",
+      description:
+        "Served as Scrum Master for the Energy Pulse app, leading agile teams to innovate in energy monitoring solutions and efficient workflows.",
+      link: "https://energypulse.com",
+      icon: "E",
+    },
+  ];
+
   return (
     <section style={{ padding: '2rem' }}>
-      {/* Container for 6 cards (2 rows x 3 columns) */}
+      {/* Grid Container for Project Cards */}
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '2rem',
         }}
       >
-        {[...Array(6)].map((_, i) => (
+        {projects.map((project, index) => (
           <div
-            key={i}
+            key={index}
             style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-start',
+              padding: '1rem',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+              borderRadius: '8px',
             }}
           >
-            {/* Pink circle icon */}
+            {/* Icon Circle */}
             <div
               style={{
                 width: '48px',
@@ -36,18 +63,22 @@ export default function Projects() {
                 marginBottom: '1rem',
               }}
             >
-              <span style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold' }}>H</span>
+              <span style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold' }}>
+                {project.icon}
+              </span>
             </div>
 
-            {/* Card heading */}
-            <h3 style={{ margin: '0.5rem 0', fontWeight: 'bold' }}>Company</h3>
+            {/* Project Title */}
+            <h3 style={{ margin: '0.5rem 0', fontWeight: 'bold' }}>
+              {project.title}
+            </h3>
 
-            {/* Description */}
+            {/* Project Description */}
             <p style={{ marginBottom: '1rem' }}>
-              Creating technology to empower civilians to explore space on their own terms.
+              {project.description}
             </p>
 
-            {/* Link with chain-link icon */}
+            {/* Link with Chain-Link Icon */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,10 +97,12 @@ export default function Projects() {
                 />
               </svg>
               <a
-                href="https://company.com"
+                href={project.link}
                 style={{ color: '#333', textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                https://company.com
+                {project.link}
               </a>
             </div>
           </div>

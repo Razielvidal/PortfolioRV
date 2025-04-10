@@ -11,25 +11,25 @@ export const metadata = {
 };
 
 export default function Home() {
-  // Example article data in English
+  // Updated articles reflecting your expertise, including agile (Jira) and Excel
   const articles = [
     {
-      date: "December 25, 2023",
-      title: "Embracing Modern Web Technologies",
+      date: "January 15, 2024",
+      title: "Harnessing Agile Tools: Jira & Excel",
       description:
-        "Discover how modern frameworks and libraries are revolutionizing the way we build applications, enabling faster development and more robust user experiences.",
+        "Discover how I leverage Jira for agile project management and Excel for efficient data tracking to streamline workflows.",
     },
     {
-      date: "December 25, 2023",
-      title: "Building Scalable Applications",
+      date: "February 10, 2024",
+      title: "Innovations in Front-End Development",
       description:
-        "Learn about strategies for designing systems that efficiently handle growing user demands and data, ensuring reliability and high performance.",
+        "Explore my journey in crafting responsive web interfaces using modern frameworks and cutting-edge front-end technologies.",
     },
     {
-      date: "December 25, 2023",
-      title: "Innovative Problem Solving in Tech",
+      date: "March 05, 2024",
+      title: "Balancing Academics and Innovation",
       description:
-        "Explore techniques and methodologies that drive innovative solutions in the fast-paced world of software engineering.",
+        "As a full-time Software Engineering student at Ensign College, I integrate academic rigor with real-world tech challenges to drive impactful solutions.",
     },
   ];
 
@@ -41,21 +41,20 @@ export default function Home() {
           {/* Left side */}
           <div className="md:col-span-2">
             <Image
-              src="/profile.jpg"
-              alt="profile"
+              src="/Raziel%20Vidal.jpg"
+              alt="Profile of Raziel Vidal"
               width={128}
               height={128}
               className="rounded-full shadow-lg"
             />
             <h1 className="text-2xl font-bold mt-4">
-              Software Engineer, Father, and Believer
+              Raziel Vidal | Software Engineer & Front-End Developer
             </h1>
             <p className="mt-2 text-gray-600">
-              With a passion for creating innovative solutions and a dedication
-              to lifelong learning, I specialize in building reliable and
-              scalable software. Whether it&#39;s crafting modern web applications
-              or tackling complex problems, I strive to deliver high-quality
-              results that make a meaningful impact.
+              I am a full-time Software Engineering student at Ensign College in Provo, UT.
+              Passionate about creating innovative solutions, I specialize in front-end development
+              and agile project management. I use modern tools like Next.js, Jira, and Excel to design
+              scalable, user-friendly applications that meet real-world challenges.
             </p>
 
             {/* Article Section */}

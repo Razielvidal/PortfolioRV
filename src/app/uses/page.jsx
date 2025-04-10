@@ -8,28 +8,37 @@ export const metadata = {
 export default function Uses() {
   const developmentTools = [
     {
-      name: "Item Name",
+      name: "Visual Studio Code",
       description:
-        "Larem iesum doler at amil ooroectetur adpising ein. Ul ee massua mi Aiquem in bendreritumo, Pellettesgue sit amet sapien fringits, mattis liguls consectetut, utrices maure Maecenas Wiss maltis telua. fulam quis impardet augue betl tuulum auesat arate lec, non susc oit manta inarim ou",
+        "My go-to code editor for writing clean, efficient code with a robust ecosystem of extensions that support JavaScript, React, and more.",
     },
     {
-      name: "Item Name",
+      name: "GitHub",
       description:
-        "Larem iesum doler at amil ooroectetur adpising ein. Ul ee massua mi Aiquem in bendreritumo, Pellettesgue sit amet sapien fringits, mattis liguls consectetut, utrices maure Maecenas Wiss maltis telua. fulam quis impardet augue betl tuulum auesat arate lec, non susc oit manta inarim ou",
+        "I leverage GitHub for version control and collaborative development, integrating CI/CD pipelines to streamline deployments.",
+    },
+    {
+      name: "Next.js",
+      description:
+        "Next.js is my framework of choice for building scalable, server-rendered React applications that power modern web interfaces.",
+    },
+    {
+      name: "Jira",
+      description:
+        "I use Jira to manage my projects using agile methodologies, keeping tasks organized and ensuring timely delivery.",
     },
   ];
 
-  // ADDITIONAL SECTION: "Design" (Whimsical & Figma)
   const designTools = [
-    {
-      name: "Whimsical",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-    },
     {
       name: "Figma",
       description:
-        "We initially adopted Figma primarily as a design tool, but it has evolved into our virtual whiteboard that serves the entire company. The unexpected allure turned out to be the powerful collaboration features it offers.",
+        "Figma is my primary design tool for UI/UX prototyping and collaboration, allowing me to iterate and refine interfaces efficiently.",
+    },
+    {
+      name: "Whimsical",
+      description:
+        "Whimsical helps me map out user flows and wireframes, turning complex ideas into clear visual diagrams for planning and brainstorming.",
     },
   ];
 
@@ -41,17 +50,13 @@ export default function Uses() {
           Software I use, gadgets I love, and other things I recommend.
         </h1>
         <p className="text-gray-700 dark:text-gray-300">
-          Here’s a list of tools and tech that power my daily workflow — from
-          development to design to general productivity.
+          Here’s a list of tools and tech that power my daily workflow — from development to design and beyond.
         </p>
       </div>
 
-      {/* Sections */}
+      {/* Tool Sections */}
       <div className="flex flex-col gap-12">
-        {/* DEVELOPMENT TOOLS */}
         <UsesSection title="Development Tools" items={developmentTools} />
-
-        {/* DESIGN TOOLS (from the screenshot) */}
         <UsesSection title="Design" items={designTools} />
       </div>
     </div>

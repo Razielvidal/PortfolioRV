@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
               { title: "Projects", url: "/projects" },
               { title: "Contact", url: "/contact" },
             ]}
-            year={`© ${new Date().getFullYear()} John Doe. All rights reserved.`}
+            year={`© ${new Date().getFullYear()} Raziel Vidal. All rights reserved.`}
           />
         </div>
       </body>
